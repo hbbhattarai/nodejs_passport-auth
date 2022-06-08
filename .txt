@@ -1,0 +1,11 @@
+new updated evning
+
+// sequelize commands
+npx sequelize-cli init
+
+npx sequelize-cli model:generate --name Plan  --attributes name:string,dzongkhag:string,category:string,areas:float,type:string,horizon_from:integer,horizon_till:integer,no_precincts:integer,base_population:integer,projected_population:integer,approved_date:string,remarks:string,data_url:string
+
+npx sequelize-cli model:generate --name SubPlan  --attributes name:string,plan_id:integer,areas:float,method:string,percentage_lp:integer,approved_date:string,remarks:string,data_url:strinnpx
+ sequelize-cli db:migrate
+
+npx sequelize-cli db:migrate:undo
